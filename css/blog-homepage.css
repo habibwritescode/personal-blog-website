@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: rgb(44, 40, 40);
+}
+
+:root {
+    --primary-color: #6200ee;
+    --secondary-color: #bb86fc;
+}
+
+.primary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-areas: "header" "main" "footer";
+    width: 90vw;
+    margin: auto;
+}
+
+.primary-grid-item-one {
+    grid-area: header;
+}
+
+.primary-grid-item-two {
+    grid-area: main;
+}
+
+.primary-grid-item-three {
+    grid-area: footer;
+    display: flex;
+    place-self: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+a:hover {
+    color: black;
+    background-color: var(--secondary-color);
+}
+
+.blog-name {
+    text-align: center;
+    width: 100%;
+    font-size: 3.5rem;
+    text-decoration: underline;
+}
+
+.quote {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.secondary-grid {
+    display: grid;
+    /* width: 100%; */
+    padding-top: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one" "two" "three" "four";
+    justify-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+    border: 2px solid rgba(100, 95, 95, 0.5);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: -5px 0px 7px -1px var(--secondary-color);
+}
+
+.card p {
+    /* width: 70%; */
+    margin: 5px auto 35px;
+    font-size: 1.5em;
+}
+
+.card h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.card img {
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.caption {
+    font-size: 1.5em;
+}
+
+.secondary-grid-item-one {
+    grid-area: one;
+}
+
+.secondary-grid-item-two {
+    grid-area: two;
+}
+
+.secondary-grid-item-three {
+    grid-area: three;
+}
+
+.secondary-grid-item-four {
+    grid-area: four;
+}
