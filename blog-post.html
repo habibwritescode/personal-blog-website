@@ -5,55 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog Website - Blog Post</title>
-    <link rel="stylesheet" href="css/blog-post.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="">Subscribe</a>
-            <a href="">Home</a>
-            <a href="">Contact Us!</a>
-        </nav>
-    </header>
+    <div class="outer-grid-container">
+        <header class="outer-grid-item-one">
+            <nav role="navigation" class="nav-flex-cont">
+                <a class="link" href="#subscribe">Subscribe</a>
+                <a class="link" href="index.html" class="push-right">Blog Home</a>
+                <a class="link" href="">Contact Us!</a>
+            </nav>
+        </header>
 
-    <main>
-        <section>
-            <h1>Name of post</h1>
-            <p>Author</p>
-            <img src="" alt="">
-        </section>
+        <main role="main" class="outer-grid-item-two">
+            <section class="profile">
+                <h1>Cooking Spaghetti</h1>
+                <h2><em>Post By Habib A</em></h2>
+                <p>Title - Mr.</p>
+                <p>Currently Unemployed</p>
+                <p class="about">Short Bio: Habib is an Economics graduate trying to crossover into Tech. He would like to be a Chef soomeday.</p>
+                <img class="avatar" src="images/IMG_20180713_023155_396.jpg" alt="Author's avatar">
+                <figure>
+                    <img class="food-image" src="images/mae-mu-Pvclb-iHHYY-unsplash.jpg" alt="Fork with spaghetti">
+                    <figcaption class="caption-two">Fork with Spaghetti</figcaption>
+                </figure>
+            </section>
 
-        <section>
-            <h2>Ingredients</h2>
-            <>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
-        </section>
+            <section class="ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>Water</li>
+                    <li>Large pot</li>
+                    <li>Pasta :)</li>
+                    <li>Salt</li>
+                    <li>Tongs</li>
+                    <li>Colander</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Directions</h2>
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-        </section>
-    </main>
+            <section class="directions">
+                <h3>Directions</h3>
+                <ol>
+                    <li><strong>Boil water in a large pot -</strong> To make sure pasta doesn’t stick together, use at least 4 quarts of water for every pound of noodles.</li>
+                    <li><strong>Salt the water with at least a tablespoon—more is fine -</strong> The salty water adds flavor to the pasta.</li>
+                    <li><strong>Add pasta -</strong> Pour pasta into boiling water. Don’t break the pasta; it will soften up within 30 seconds and fit into the pot.</li>
+                    <li><strong>Stir the pasta -</strong> As the pasta starts to cook, stir it well with the tongs so the noodles don’t stick to each other (or the pot).</li>
+                    <li><strong>Test the pasta by tasting -</strong> it Follow the cooking time on the package, but always taste pasta before draining to make sure the texture is right. Pasta cooked properly should be al dente—a little chewy.</li>
+                    <li><strong>Drain the pasta -</strong> Drain cooked pasta well in a colander. If serving hot, add sauce right away; if you’re making a pasta salad, run noodles under cold water to stop the cooking.
+                    </li>
+                </ol>
+            </section>
 
-    <aside>
+            <section class="posts">
+                <a href="">Previous Post</a>
+                <a href="">Next Post</a>
+            </section>
 
-    </aside>
+            <section id="subscribe" class="form-container-post">
+                <h1>Newsletter</h1>
+                <p>Stay up to date with latest recipes</p>
+                <form action=" ">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" required>
+                    <br>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </main>
 
-    <footer></footer>
+        <aside role="complementary" class="outer-grid-item-three ">
+            <p>You can
+                <br>follow us on:</p>
+            <a href=" "><img src="icons/twitter.png" alt="Twitter logo"></a>
+            <a href=" "><img src="icons/facebook.png" alt="Facebook logo"></a>
+            <a href=" "><img src="icons/linkedin.png" alt="Linkedin logo"></a>
+        </aside>
+
+        <footer role="contentinfo" class="outer-grid-item-four">&copy;March, 2020 Habib Afolabi</footer>
+
+    </div>
 </body>
 
 </html>
