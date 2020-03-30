@@ -9,38 +9,81 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="">Subscribe</a>
-            <a href="">Contact Us!</a>
-        </nav>
-        <h1>My Food Blog</h1>
-    </header>
 
-    <main>
-        <article>
-            <img src="" alt="">
-            <h2></h2>
-            <a href=""></a>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h2></h2>
-            <a href=""></a>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h2></h2>
-            <a href=""></a>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h2></h2>
-            <a href=""></a>
-        </article>
-    </main>
+    <div class="primary-grid">
+        <header class="primary-grid-item-one">
+            <nav role="navigation" class="nav-container">
+                <a class="link" href="#subscribe">Subscribe</a>
+                <a class="link" href="#">Contact Us!</a>
+            </nav>
+            <h1 class="blog-name">My Food Blog</h1>
+        </header>
 
-    <footer></footer>
+        <main role="main">
+            <blockquote cite="https://www.goodreads.com/quotes/tag/food" class="quote">One cannot think well, love well, sleep well, if one has not dined well - <strong>Virginia Woolf</strong></blockquote>
+
+            <div class="secondary-grid primary-grid-item-two">
+                <section class="card secondary-grid-item-one">
+                    <figure>
+                        <img src="images/mae-mu-Pvclb-iHHYY-unsplash.jpg" alt="Fork with spaghetti">
+                        <figcaption class="caption">Image of Fork with Spaghetti</figcaption>
+                    </figure>
+                    <h2>Cooking Spaghetti</h2>
+                    <p><em>Photo by Mae Mu on Unsplash</em></p>
+                    <a class="link" href="blog-post.html">Read More</a>
+                </section>
+
+                <section class="card secondary-grid-item-two">
+                    <figure>
+                        <img src="images/mae-mu-en4qp-aK1h4-unsplash.jpg" alt="Ramen seafood">
+                        <figcaption class="caption ">Image of Ramen seafood</figcaption>
+                    </figure>
+                    <h2>Best way to make Noodles</h2>
+                    <p><em>Photo by Mae Mu on Unsplash</em></p>
+                    <a class="link" href="#">Read More</a>
+                </section>
+
+                <section class="card secondary-grid-item-three">
+                    <figure>
+                        <img src="images/jon-tyson-kctt4tL1dkE-unsplash.jpg" alt="Board of grilled meat">
+                        <figcaption class="caption">Image of Board of grilled meat</figcaption>
+                    </figure>
+                    <h2>Making Meat Barbecue</h2>
+                    <p><em>Photo by Jon Tyson on Unsplash</em></p>
+                    <a class="link" href="#">Read More</a>
+                </section>
+
+                <section class="card secondary-grid-item-four">
+                    <figure>
+                        <img src="images/mae-mu-1LPsUqjb_Jg-unsplash.jpg" alt="Square waffle with strawberries">
+                        <figcaption class="caption">Image of Square waffles with strawberries</figcaption>
+                    </figure>
+                    <h2>Preparing Waffles from Scratch</h2>
+                    <p><em>Photo by Mae Mu on Unsplash</em></p>
+                    <a class="link" href="#">Read More</a>
+                </section>
+
+                <section id="subscribe" class="form-container-home secondary-grid-item-five">
+                    <h1>Newsletter</h1>
+                    <p>Stay up to date with latest recipes</p>
+                    <form action="">
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" required>
+                        <br>
+                        <button type="submit ">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer role="contentinfo" class="primary-grid-item-three ">
+            <p>Built for Udacity Frontend Web Developer Nanodegree &copy;March, 2020 by Habib Afolabi</p>
+        </footer>
+
+    </div>
 </body>
 
 </html>
