@@ -15,3 +15,131 @@ html {
     --primary-color: #6200ee;
     --secondary-color: #bb86fc;
 }
+
+.outer-grid-container {
+    display: grid;
+    width: 90%;
+    margin: 20px auto 0;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: "hd hd" "main sd" "foot foot";
+}
+
+.outer-grid-item-one {
+    grid-area: hd;
+}
+
+.nav-flex-cont {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.outer-grid-item-two {
+    width: 70%;
+    grid-area: main;
+    margin: auto;
+}
+
+.profile,
+.ingredients,
+.directions {
+    font-size: 1.8em;
+    line-height: 1.8em;
+}
+
+.profile h2 {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.profile p {
+    font-size: 0.8em;
+}
+
+.about {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.food-image {
+    height: auto;
+    max-width: 50%;
+}
+
+.caption-two {
+    font-size: 0.8em;
+    line-height: 0.5em;
+    margin-bottom: 30px;
+}
+
+.directions {
+    margin: 20px 0;
+}
+
+.directions li {
+    margin-bottom: 10px;
+}
+
+.posts {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.posts a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    color: var(--primary-color);
+    border-radius: 5px;
+    border: 2px solid var(--secondary-color);
+}
+
+.posts a:hover {
+    border: 2px solid var(--primary-color);
+    color: black;
+}
+
+.outer-grid-item-three {
+    grid-area: sd;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 30%;
+    right: 20px;
+    z-index: 1;
+}
+
+.outer-grid-item-four {
+    grid-area: foot;
+    display: flex;
+    place-self: center;
+    font-size: 1.5em;
+}
+
+aside p {
+    font-size: 1.2em;
+}
+
+aside img {
+    margin-bottom: 20px;
+    max-width: 50%;
+    height: auto;
+}
+
+.form-container-post {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
