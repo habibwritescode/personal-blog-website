@@ -4,4 +4,4 @@
 
 # Hosted
 
-- https://habibwritescode.github.io/personal-blog-website/blog-post.html
+- https://habibwritescode.github.io/personal-blog-website/
